@@ -1,8 +1,6 @@
-﻿using System;
-
-class TicketPriceCalculator
+﻿public class TicketPriceCalculator
 {
-    static void Main()
+    public static void Run()
     {
         Console.Write("Enter your age: ");
         int age = int.Parse(Console.ReadLine());

@@ -1,29 +1,29 @@
 ﻿using System;
 
-class TriangleTypeIdentifier
+public class TriangleTypeIdentifier
 {
-    static void Main()
+    public static void Run()
     {
-        Console.Write("Enter length of side A: ");
-        double a = double.Parse(Console.ReadLine());
+        Console.Write("Enter side 1: ");
+        double side1 = double.Parse(Console.ReadLine() ?? "0");
 
-        Console.Write("Enter length of side B: ");
-        double b = double.Parse(Console.ReadLine());
+        Console.Write("Enter side 2: ");
+        double side2 = double.Parse(Console.ReadLine() ?? "0");
 
-        Console.Write("Enter length of side C: ");
-        double c = double.Parse(Console.ReadLine());
+        Console.Write("Enter side 3: ");
+        double side3 = double.Parse(Console.ReadLine() ?? "0");
 
-        if (a == b && b == c)
+        if (side1 == side2 && side2 == side3)
         {
-            Console.WriteLine("Triangle Type: Equilateral");
+            Console.WriteLine("The triangle is equilateral.");
         }
-        else if (a == b || b == c || a == c)
+        else if (side1 == side2 || side1 == side3 || side2 == side3)
         {
-            Console.WriteLine("Triangle Type: Isosceles");
+            Console.WriteLine("The triangle is isosceles.");
         }
         else
         {
-            Console.WriteLine("Triangle Type: Scalene");
+            Console.WriteLine("The triangle is scalene.");
         }
     }
 }

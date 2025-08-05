@@ -1,8 +1,8 @@
 ﻿using System;
 
-class GradeCalculator
+public class GradeCalculator
 {
-    static void Main()
+    public static void Run()
     {
         Console.Write("Enter your numerical grade (0 - 100): ");
         int grade = int.Parse(Console.ReadLine());
